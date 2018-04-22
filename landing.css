@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps')
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+	background-image: url(pic/ocean.png), url(pic/beach.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	background-blend-mode: color;
+	
+}
+
+
+
+
+
+/** line below the header**/
+.div{
+	animation: 3s slidein;
+	background-color:white;
+	height: 3px;
+	margin: 0px ;	
+	width: 100%;
+	
+
+}
+/*animation to the line below the header*/
+@keyframes slidein {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+  }
+/*header part for all pages*/
+.header{
+    display: flex;
+    justify-content: flex-end;
+	background-color: hsla(0, 0%, 0% ,0.8) ;
+    box-shadow: 5px 10px 8px hsla(0, 0%, 0% ,0.4) ;
+	padding: 10px;
+	margin: 0px;
+	
+	
+
+
+	
+}
+/** logo in the heading**/
+	.log{
+		font-family: Baltica;
+		position: absolute;
+		top: 10px;
+		left: 70px;
+		border-radius: 50%;
+		color: white;
+		 -webkit-animation: move 5s infinite;
+        animation: move 5s infinite;
+		
+       
+}
+/** animation to header logo **/
+
+@-webkit-keyframes move {
+    from {left: 70px;}
+    to {left: 200px;}
+}
+
+@keyframes move {
+    from {left: 70px;}
+    to {left: 200px;}
+}
+
+
+	/**selection to the link of the pages **/
+nav li,a{
+    text-decoration: none;
+	list-style-type: none;
+	display: inline;
+
+
+}
+.text li{
+	list-style-type: none;
+}
+
+
+a{
+	font-family: 'Bilbo Swash Caps', cursive;
+    margin: 20px 29px 20px 29px;
+	color: white;
+	font-size: 20px;
+
+	
+}
+
+
+/**hover to a */
+a:hover{
+	color: #5BC8AC;
+	}
+
+
+/*text in home page */
+
+
+.h1{
+    opacity: 0;
+    font-size: 25px;
+	text-align: center;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
+	position: absolute;
+	left: 21.5em;
+	-webkit-animation-name: hey;
+	animation-name: hey;
+	animation-duration: 3s;
+	}
+/**animation for text in the homepage*/
+@keyframes hey{
+	from {opacity: 1;}
+	to{ opacity: 0; }
+}
+
+
+.text{
+	position: absolute;
+	top: 7em;
+	left: 10em;
+	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
+	
+}
+/*imgae in home page*/
+.text .nischal-image{
+	margin-top: 80px;
+	margin-left: 80px;
+}
+
+	
+	
+.li{
+    font-family: 'Permanent Marker', cursive;
+	position: relative;
+	left:0px;
+	color: green;
+
+}
+.page{
+
+	font-size: 100px;
+	position: relative;
+	top: 10px;
+	left: 150px;
+	color: white;
+
+}
+
+.glad{
+
+	line-height: 100px;
+	font-family: 'Bilbo Swash Caps', cursive;
+	color: white;
+	font-weight: bolder;
+	font-size: 40px;
+	
+}
+.start{
+	color: black;
+	line-height: 80px;
+	position: relative;
+	left: 100px;
+	-webkit-animation-name: text;
+	animation-name: text;
+	-webkit-animation-duration: 4s;
+	animation-iteration-count: infinite;
+
+}
+/*animation to the text (lets get) in homepage*/
+@-webkit-keyframes text{
+	from{color: black;}
+	to{color: white;}
+}
+
+.button{
+   
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 30px;
+	border-radius: 60px 60px;
+	color: white;
+	border: 3px solid white;
+	padding: 8px;
+	
+}
+
+.button:hover{
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	border: 3px solid black;
+
+}
+
+
+/* line overhead*/
+
+.text  {
+	display: flex;
+	flex-direction: row;
+	
+}
+.text ul{
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;	
+}
+
+/**image section**/
+.logo {
+	opacity: 0.8;
+	border-radius: 100px 100px;
+	
+
+}
+.logo:hover{       
+	cursor: pointer;
+	
+}
+
+
+
+section{
+	height: 800px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/**FOOTER SECTIION**/
+
+footer{
+	
+	border: 0;
+    padding: 60px 60px;
+	background-color:hsl(0, 0%, 0% );
+	margin: 0px;
+	color: white;
+	text-align: center;
+	
+	
+	}
+
+	
+	/**Contact section*/
+	.contact{
+		height: 500px;
+		width: 500px;
+		background-color: #C4DFE6;
+		opacity: 0.6;
+		margin-top: 50px;
+		margin-left: 490px;
+		box-shadow: 5px 10px 8px hsla(0, 0%, 0% ,0.7);
+		z-index: 0;
+	}
+	.avatar{
+		    text-align: center;
+		    margin-top: 2px;
+            margin-left: 200px;
+            opacity: 1;
+            z-index: 1;
+
+	}
+	/**avatar added to fill up form*/
+.avatar:hover{
+	
+	transition-duration: 3s;
+	transform: rotate3d(1, 1, 1, 6.2860rad);
+	
+   }
+.fill{
+	
+	top: 20px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin-top: 0px;
+	font-family: 'Bilbo Swash Caps', cursive;
+}
+p{
+	text-align: center;
+	font-family: 'Bilbo Swash Caps', cursive;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.contact>input,textarea{
+	border: none;
+	outline: none;
+	margin-left: 80px;
+	height: 21px;
+	border-bottom: 1px solid green;
+	margin-bottom: 10px;
+	width: 70%;
+}
+/** selection made according to input type*/
+.contact>input[type="text"],.contact>textarea[type="text"],.contact>input[type="Email"]{
+	
+	background-color: transparent;
+	border-bottom: 1px solid black;
+
+
+}
+
+.contact>input[type="submit"]{
+	margin-top: 40px;
+	border-bottom: none;
+    margin-left: 122px;
+    width: 50%;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact>input[type="submit"]:hover{
+	cursor: pointer;
+	color: grey;
+}
+.map{
+	display: flex;
+	flex-direction: row;
+	top: 800px;
+    margin-top: 10px;
+	margin-left: 75%;
+
+}
+.map>.live-map{
+	height: 200px;
+	width: 200px;
+
+	
+    margin-top: -100px;
+	border-radius: 80px;
+}
+.get{
+	margin-top: -50px;
+
+}
+
+.sc>.general{
+	position: absolute;
+	left: 0px;
+}
+.sc {
+	color: white;
+	font-size: 20px;
+}
+/** contact section ends**/
+ 
+ /** About secetion**/
+ .about{
+ 	display: flex;
+ 	flex-direction: row;
+ 	height: 550px;
+ 	margin: 50px;
+ 	width: 80%;
+} 
+
+.about .mine h1.nischal{
+	
+		padding-left: 270px; 
+		font-family: 'Bilbo Swash Caps', cursive;
+
+
+}
+.mine{
+	
+ 	height: 450px;
+ 	margin-top: 30px;
+ 	margin-right: 50px;
+ 	width: 76%;
+ 	color: white;
+
+}	
+
+ .imgabout{
+ 	-webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+    font-family: 'Amatic SC', italic;
+    object-fit: cover;
+    max-width: 100%;
+ 	border-radius: 200px 200px;
+ 	padding-top: 40px;
+ 	width: 70%;
+ 	opacity: 0.6;
+ }
+ section>.abutton{/**styling button in about page**/
+   
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 20px;
+	border-radius: 60px 60px;
+	color: white;
+	border: 3px solid white;
+	padding: 8px 20px;
+	margin-left: 60em;
+
+}
+
+.abutton:hover{
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	border: 3px solid black;
+
+}
+
+
+/**CV Section**/
+/*making a container to select all the div used to create CV*/
+.flex-container{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+
+}
+ 
+
+.flex-container {
+	padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+	text-align: justify;
+	margin-right: 10px;
+	font-family: 'Indie Flower', cursive;
+	
+}
+.Basic{
+	border: 2px solid white;
+	padding: 50px;
+	margin: 40px;
+	color: white;
+	width: 20%;
+}
+.qualification{
+	border: 2px solid white;
+	padding: 50px;
+	margin: 40px;
+	color: white;
+	width: 20%;
+}
+.Experience{
+	border: 2px solid white;
+	padding: 50px;
+	margin: 40px;
+	color: white;
+	width: 20%;
+	
+}
+.education{
+	border: 2px solid white;
+	padding: 50px;
+	margin: 40px;
+    color: white;
+    width: 20%;
+}
+
+
+/**Social **/
+
+section .social-icon{
+
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+/**section created to make the div for social classes social icon*/
+.social-fun{
+	font-family: 'Bilbo Swash Caps', cursive;
+	text-align: center;
+	color: white;
+}
+section .social-icon .fa{
+	font-size: 100px;
+}
+section .social-icon .first{
+	margin-top: 5%;
+}
+section .social-icon .second{
+	margin-top: 8%;
+}
+section .social-icon .third{
+	margin-top: 8%;
+
+}
+section .social-icon .first .fa-facebook{
+	margin-right: 42%;
+	padding-left: 20%;
+}
+section .social-icon .second .fa-twitter{
+	margin-right: 40%;
+	padding-left: 20%;
+}
+section .social-icon .third .fa-linkedin{
+	margin-right: 40.5%;
+	padding-left: 20%;
+
+}
+section .social-icon .fa:hover{
+color: white;
+opacity: 0.2;
+}
+.social-icon>.first,.second,.third{
+	animation: bounce 1s infinite alternate;
+	-webkit-animation: bounce 1s infinite alternate;
+
+}
+
+@keyframes bounce{
+	from{
+		transform: translateY(10px);
+	}
+	to {
+		transform: translateY(-20px);
+	}
+}
+
+
+	/**Model**/
+.body{
+	background-image: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	font-family: none;
+	margin:2% 20%;
+
+}
+.pmodel{
+	font-family: none;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;/*this help to justify text**/
+	text-justify: inter-word;
+}
+.pa{
+	font-size: 16px;
+	font-family: none;
+	color: black;
+	text-decoration: underline;
+}
+.body>h1{
+	font-size: 16px;
+	font-weight: bold;
+}
+.wireframes>p{
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;/*this help to justify text**/
+	text-justify: inter-word;
+	font-family: none;
+
+}
+.wireframes>a{
+	color: black;
+	font-family: none;
+	text-decoration: underline;
+}
+.et>p{
+	font-family: none;
+	font-size: 16px;
+	font-weight: normal;
+}
+.design>h1{
+	font-size: 16px;
+	font-weight: bold;
+}
+.validation p{
+ font-size: 16px;
+ font-family: none;
+ font-weight: normal;
+}
+.responsive>h1{
+	font-weight: bold;
+	font-size: 16px;
+}
+.ref h1{
+	font-weight: bold;
+	font-size: 16px;
+}
+.conclusion {
+ font-weight: bold;
+	font-size: 16px;
+}
+.validation h1{
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+}
+.validation a{
+	color: black;
+	font-size: 16px;
+}
+
+
+
+/*creating resoponsive pages*/
+
+
+@media only screen and (max-width: 600px) {
+	body{
+		
+		width: 100%;
+	}
+	nav ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.get{
+		display: none;
+	}
+	.general{
+		display: none;
+	}
+	.text{
+		padding: 40px;
+		border: none;
+		position: absolute;
+		left: 0;
+		font-size: 20px;
+		margin-top: 200px;
+		margin-left: 0;
+
+	}
+	.text .nischal-image{
+		display: none;
+		margin-left: 0px;
+		height: 20px;
+		width: 20px;
+	}
+	.page {
+		font-size: 50px;
+	}
+	section{
+		width: 100%;
+	}
+	.imgabout{
+
+		display: none;
+	}
+   .about{
+   	margin-top: 0;
+   	text-align: center;
+   	margin-bottom: 10px;
+
+   }
+   .mine>p{ 
+   	width: 100%;
+    margin-bottom: 0;
+    margin-left: 35px;
+    font-size: 15px;
+    margin-top: 30px;
+   
+
+
+   }
+   .mine >.nischal{
+   	
+   	width: 100%;
+   	position: absolute;
+   	right: 0.7em;
+   	top: 10em;
+   	margin-bottom: 0px;
+   	margin-top: 0;
+   	text-align: center;
+   }
+   .flex-container{
+   	display: flex;
+   	flex-direction: row;
+   	justify-content: space-around;
+   	flex-wrap: wrap;
+
+   }
+   .Experience li{
+   	padding: 0px;
+   	text-align: left;
+   	 }
+
+   	 .Experience{
+
+   	 }
+   .section{
+   	height: 3000px;
+   }   
+   /*social part*/
+   .first, .second, .third{
+   	display: flex;
+   	flex-direction: row;
+   	padding-bottom: 20px;
+   	margin-left: 100px;
+
+   }
+   .second{
+   	margin-left: 75px;
+
+   }
+   .third{
+   	margin-left: 80px;
+   }
+   /**social part ends*/
+   .contact{
+   	height: 500px;
+   	width: 400px;
+   	align-content: center;
+   	margin-left: 30px;
+
+   }
+   .sc>a{
+   	display: none;
+   }
+  
+
+  .map .live-map{
+  	margin-top: 10px;
+   	height: 150px;
+   	width: 150px;
+   	left: 0px;
+   	bottom: 0px;
+   }
+   .contact>.avatar{
+   	position: relative;
+   	right: 45px;
+   }
+
+   section>.abutton{
+     margin-left: 350px;
+   	
+   }
+}
